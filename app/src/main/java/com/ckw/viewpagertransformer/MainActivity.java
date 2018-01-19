@@ -91,6 +91,8 @@ public class MainActivity extends FragmentActivity implements ActionBar.OnNaviga
 
         mPager = (ViewPager) findViewById(R.id.container);
         mPager.setAdapter(mAdapter);
+        mPager.setPageMargin(40);
+        mPager.setOffscreenPageLimit(2);
         mPager.setCurrentItem(selectedPage);
 
         actionBar.setSelectedNavigationItem(mSelectedItem);
